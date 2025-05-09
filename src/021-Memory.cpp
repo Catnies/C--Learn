@@ -12,6 +12,24 @@ void fun1() {
   *ptr = 114514;                                              // 将内存中的数据设置初始化.
   cout << "内存地址: " << ptr << " 的值为: " << *ptr << endl;  // 打印内容.
   free(ptr);                                                  // 在使用完成后, 需要手动释放堆内存中的数据, 如果指针被销毁了, 那么这段内存将不再可以通过正常方法访问.
+
+  // 使用  calloc 申请内存, 传入的入参为, 元素数量 和 元素大小, 例如此处创建了一个长度为5的int数组.
+  int (*arrptr)[5] = (int(*)[5])calloc(5, sizeof(int));       
+  (*arrptr)[0] = 1;
+  (*arrptr)[1] = 2;
+  (*arrptr)[2] = 3;
+  (*arrptr)[3] = 4;
+  (*arrptr)[4] = 5;
+  for (auto &&i : *arrptr) {
+    cout << "数组值: " << i << endl;
+  }
+
+  // 使用 realloc 可以传入 原指针 + 新大小 重新给这个指针分配内存, 例如此处将先前创建的20字节的指针扩容到了40字节.
+  int (*newptr)[10] = (int(*)[10])realloc(arrptr, 10 * sizeof(int));
+  for (auto &&i : *newptr) {
+    cout << "扩容数组值: " << i << endl;
+  }
+  
 }
 
 
