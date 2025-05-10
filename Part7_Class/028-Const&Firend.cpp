@@ -43,7 +43,7 @@ class Shape {
 int lookHimistu(People& people) {
   cout << people.himitsu << endl;  // 因为People声明了 lookHimistu函数 为其友元, 所以可以访问People类的私有变量.
   return 0;
-}
+};
 
 
 int main() {
@@ -53,4 +53,4 @@ int main() {
   Shape sp;
   sp.look(people);
   lookHimistu(people);
-} 
+};
