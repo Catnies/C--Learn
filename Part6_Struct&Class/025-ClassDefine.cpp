@@ -36,8 +36,7 @@ class People {
 People::~People() {
   delete[] digits;
   digits = nullptr;
-}
-
+};
 
 
 int main() {
