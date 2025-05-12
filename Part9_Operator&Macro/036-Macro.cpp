@@ -42,9 +42,6 @@ using namespace std;
 // _TIME_       ->   编译时间
 // _FILE_       ->   源文件路径
 // _LINE_       ->   行号
-// 
-
-
 
 
 int main() {
