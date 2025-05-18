@@ -18,10 +18,3 @@ void OpenCalculator()
         // 例如：MessageBox(NULL, "无法打开计算器", "错误", MB_OK);
     }
 };
-
-// 使用示例
-int main()
-{
-    OpenCalculator();
-    return 0;
-}

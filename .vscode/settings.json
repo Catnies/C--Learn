@@ -58,5 +58,8 @@
         "set": "cpp",
         "iomanip": "cpp",
         "sstream": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "F:/VsCode Projects/C++-Learn/Part00_Other",
+    "cmake.buildDirectory": "${workspaceFolder}/Part00_Other/build",
+    "cmake.generator": "MinGW Makefiles"
 }
