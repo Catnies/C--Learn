@@ -59,7 +59,7 @@
         "iomanip": "cpp",
         "sstream": "cpp"
     },
-    "cmake.sourceDirectory": "F:/VsCode Projects/C++-Learn/Part00_Other",
-    "cmake.buildDirectory": "${workspaceFolder}/Part00_Other/build",
-    "cmake.generator": "MinGW Makefiles"
+    "cmake.buildDirectory": "${sourceDirectory}/build_auto",
+    "cmake.generator": "MinGW Makefiles",
+    "cmake.sourceDirectory": "F:/VsCode Projects/C++-Learn/R03-SimpleJNI"
 }

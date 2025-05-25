@@ -1,2 +1,4 @@
 *.exe
 **/build
+**/build_auto
+R04-MDVerifyJNI/cn_chengzhiya_mhdfverify_Verify.cpp
